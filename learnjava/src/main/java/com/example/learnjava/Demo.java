@@ -53,6 +53,15 @@ public class Demo {
         uglyTroll.showInfo();
         uglyTroll.takeDamage(30);
 
+        Vampire vlad = new Vampire("Vlad");
+        vlad.showInfo();
+        vlad.takeDamage(8);
+        vlad.showInfo();
 
+        VampireKing dracula = new VampireKing("Dracula");
+        dracula.showInfo();
+        dracula.takeDamage(12);
+        dracula.showInfo();
     }
+
 }
