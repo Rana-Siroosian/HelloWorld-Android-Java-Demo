@@ -1,6 +1,6 @@
 package com.example.learnjava;
+
 /**
- *
  * @author >>RanaSiroosian<<
  */
 
@@ -30,10 +30,28 @@ public class Demo {
 
         Loot redPotion = new Loot("Red Potion", LootType.POTION, 7);
         rana.pickUpLoot(redPotion);
-        rana.pickUpLoot(new Loot("+3 Chest Armor", LootType.ARMOR,80));
-        rana.pickUpLoot(new Loot("Ring of Protection +2", LootType.RING,40));
-        rana.pickUpLoot(new Loot("invisibility Potion", LootType.POTION,35));
+        rana.pickUpLoot(new Loot("+3 Chest Armor", LootType.ARMOR, 80));
+        rana.pickUpLoot(new Loot("Ring of Protection +2", LootType.RING, 40));
+        rana.pickUpLoot(new Loot("invisibility Potion", LootType.POTION, 35));
         rana.showInventory();
+
+//        Loot bluePotion = new Loot("Blue Potion", LootType.POTION,6);
+        boolean wasDeleted = rana.dropLoot(redPotion);
+        System.out.println(wasDeleted);
+        rana.showInventory();
+//        ********************************************************************
+        Enemy enemy = new Enemy("test enemy", 10, 3);
+        enemy.showInfo();
+
+        enemy.takeDamage(3);
+        enemy.showInfo();
+
+        enemy.takeDamage(11);
+        enemy.showInfo();
+        //        ********************************************************************
+        Troll uglyTroll = new Troll("Ugly Troll");
+        uglyTroll.showInfo();
+        uglyTroll.takeDamage(30);
 
 
     }
