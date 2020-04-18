@@ -1,4 +1,8 @@
 package com.example.learnjava;
+/**
+ *
+ * @author >>RanaSiroosian<<
+ */
 
 enum LootType{POTION, RING, ARMOR}
 

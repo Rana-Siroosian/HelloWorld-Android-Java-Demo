@@ -1,4 +1,8 @@
 package com.example.learnjava;
+/**
+ *
+ * @author >>RanaSiroosian<<
+ */
 
 public class Weapon {
     private String name;
