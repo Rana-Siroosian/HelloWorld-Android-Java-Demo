@@ -117,4 +117,17 @@ public class Player {
         }
         System.out.println("==============================");
     }
+    public int score(){
+        int total = 0;
+        //for loop below is a more efficient way to processing the ordinary Arrays
+//        for (int i=0; i<inventory.size();i++){
+
+        //for loop below is a more efficient way to processing the collection objects
+        for (Loot currentLoot : inventory){
+//            Loot currentLoot = inventory.get(i);
+            System.out.println(currentLoot.getName() + " si worth " + currentLoot.getValue());
+            total = total + currentLoot.getValue();
+        }
+        return total;
+    }
 }
