@@ -97,7 +97,8 @@ public class Demo {
 
         System.out.println(conan.score());
         //        ********************************************************************
-
+        conan.dropLoot("Cursed Shield");
+        System.out.println(conan.score());
 
     }
 
